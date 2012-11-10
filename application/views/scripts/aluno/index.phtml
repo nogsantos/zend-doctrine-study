@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Alunos</title>
+</head>
+<body>
+  <h1>Cadastro de Alunos</h1>
+  <a href="<?=$this->linkIncluir?>">Incluir aluno</a>
+  <table>
+    <thead>
+      <tr>
+        <th>matricula</th>
+        <th>nome</th>
+        <th>data de nascimento</th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+    <?=$this->partialLoop('alunos.phtml', $this->rows)?>
+    </tbody>
+  </table>
+</body>
+</html>

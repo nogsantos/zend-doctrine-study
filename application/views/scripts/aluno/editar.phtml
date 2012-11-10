@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Edi&ccedil;&atilde;o de aluno</title>
+	</head>
+	<body>
+	  <form action="" method="post">
+	    <label for="matricula">Matr&iacute;cula</label>
+	    <input type="text" name="matricula" id="matricula" value="<?php echo $this->row->getMatricula()?>" ><br>  
+	    <label for="nome">Nome</label>
+	    <input type="text" name="nome" id="nome" value="<?php echo $this->row->getNome()?>"><br>
+	    <label for="data_de_nascimento">Data de nascimento</label>
+	    <input type="text" name="data_de_nascimento" id="data_de_nascimento" value="<?php echo $this->row->getDataDeNascimento()?>"><br>
+	    <input type="hidden" name="id" id="id" value="<?php echo $this->row->getId()?>">
+	    <input type="submit" value="gravar">
+	  </form>
+	  <a href="<?php echo $this->linkRetornar?>">Retornar</a>
+	</body>
+</html>
